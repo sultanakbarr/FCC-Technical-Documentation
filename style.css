@@ -13,28 +13,29 @@ body {
   position: fixed;
 }
 
-#navbar{
-    width: 350px;
-    border-right: 3px solid #222;
-    height: 100vh;
+#navbar {
+  width: 350px;
+  border-right: 3px solid #222;
+  height: 100vh;
 }
 
-#navbar ul{
-    height: 75vh;
-    padding: 0;
-    overflow-x: hidden;
-    position: static;
+#navbar ul {
+  height: 75vh;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: static;
 }
 
-#navbar li{
-    position: relative;
-    list-style: none;
-    border-top: 2px solid #222;
-    width: 100%;
+#navbar li {
+  position: relative;
+  list-style: none;
+  border-top: 2px solid #222;
+  width: 100%;
 }
 
-nav header{
-    padding: 15px;
+nav header {
+  padding: 15px;
 }
 
 .nav-link {
@@ -47,56 +48,57 @@ nav header{
 
 main header,
 nav header {
-    font-weight: 700;
-    font-size: 1.8em;
+  font-weight: 700;
+  font-size: 1.8em;
 }
 
-#main-doc{
-    margin-left: 20px;
-    padding: 20px;
-    height: 100vh;
-    overflow-y: scroll;
-    padding-bottom: 500px;
+#main-doc {
+  margin-left: 20px;
+  padding: 20px;
+  margin-bottom: 110px;
 }
 
-section article{
-    margin: 15px;
-    text-align: justify;
+section article {
+  margin: 15px;
+  text-align: justify;
 }
 
-section li{
-    margin: 15px 0px 0px 20px;
+section li {
+  margin: 15px 0px 0px 20px;
 }
 
-code pre{
-    padding: 15px;
-    background-color: #eee;
+code pre {
+  padding: 15px;
+  background-color: #eee;
 }
 
 @media (max-width: 576px) {
-    body{
-        display: block;
-    }
-    .container{
-        height: 200px;
-        border: 6px solid black;
-    }
-    #navbar{
-        position: static;
-        width: 500px;
-        height: 200px;
-        border-bottom: 3px solid #222;
-    }
-    #navbar header{
-        text-align: center;
-    }
-    #main-doc{
-        position: relative;
-        height: 100vh;
-        width: 500px;
-        overflow-y: auto;
-    }
-    #navbar ul{
-        height: 100px;
-    }
+  body {
+    display: block;
+    position: static;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    max-height: 300px;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-bottom: 3px solid #222;
+  }
+  #navbar header {
+    text-align: center;
+  }
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 300px;
+    overflow-y: auto;
+  }
+  #navbar ul {
+    height: 207px;
+  }
 }
