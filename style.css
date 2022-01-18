@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+}
+
+#navbar{
+    width: 350px;
+    border-right: 3px solid #222;
+    height: 100vh;
+}
+
+#navbar ul{
+    height: 75vh;
+    padding: 0;
+    overflow-x: hidden;
+    position: static;
+}
+
+#navbar li{
+    position: relative;
+    list-style: none;
+    border-top: 2px solid #222;
+    width: 100%;
+}
+
+nav header{
+    padding: 15px;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #444;
+  cursor: pointer;
+}
+
+main header,
+nav header {
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+#main-doc{
+    margin-left: 20px;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: scroll;
+    padding-bottom: 500px;
+}
+
+section article{
+    margin: 15px;
+    text-align: justify;
+}
+
+section li{
+    margin: 15px 0px 0px 20px;
+}
+
+code pre{
+    padding: 15px;
+    background-color: #eee;
+}
+
+@media (max-width: 576px) {
+    body{
+        display: block;
+    }
+    .container{
+        height: 200px;
+        border: 6px solid black;
+    }
+    #navbar{
+        position: static;
+        width: 500px;
+        height: 200px;
+        border-bottom: 3px solid #222;
+    }
+    #navbar header{
+        text-align: center;
+    }
+    #main-doc{
+        position: relative;
+        height: 100vh;
+        width: 500px;
+        overflow-y: auto;
+    }
+    #navbar ul{
+        height: 100px;
+    }
+}
